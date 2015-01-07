@@ -21,7 +21,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.log4j.*;
 
 /**
- * 数据库连接基础类 简要说明: 数据库连接、连接池
+ * 数据库连接基础类 简要说明: 数据库连接、连接池。
  * 
  * @author 李玮
  * @version 1.00 2014-6-13下午04:38:38 新建

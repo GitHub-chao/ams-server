@@ -7,9 +7,9 @@
 * 备注：
 *
 * 修改历史：
-* 2014-6-13	1.0		李玮		新建
+* 2014-6-19	1.0		李玮		新建
 */
-package cn.edu.hbcit.servlet;
+package cn.edu.hbcit.servlet.login;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -18,22 +18,21 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import cn.edu.hbcit.dao.TestDao;
+import javax.servlet.http.HttpSession;
 
 /**
- * 测试类
+ * 登出类
  * 简要说明:
  * @author 李玮
- * @version 1.00  2014-6-13下午04:56:34	新建
+ * @version 1.00  2014-6-19下午11:47:26	新建
  */
 
-public class TestServlet extends HttpServlet {
+public class LogoutServlet extends HttpServlet {
 
 	/**
 	 * Constructor of the object.
 	 */
-	public TestServlet() {
+	public LogoutServlet() {
 		super();
 	}
 
@@ -74,8 +73,10 @@ public class TestServlet extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		TestDao td = new TestDao();
-		td.testByJSON();
+		response.setContentType("text/html");
+		HttpSession session = request.getSession(false);
+		session.invalidate();
+		response.sendRedirect("../index.jsp");
 	}
 
 	/**

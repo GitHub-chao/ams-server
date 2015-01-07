@@ -9,7 +9,7 @@
 * 修改历史：
 * 2014-6-16	1.0		李玮		新建
 */
-package cn.edu.hbcit.servlet;
+package cn.edu.hbcit.servlet.login;
 
 import java.io.IOException;
 import java.io.PrintWriter;

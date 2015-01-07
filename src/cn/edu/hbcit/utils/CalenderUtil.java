@@ -30,7 +30,7 @@ public class CalenderUtil {
 	public static int year = 0;
 
 	/**
-	 * 返回当前时间年 返回当前时间月 返回该月的总天数 返回这个月一号所对应星期几
+	 * 返回当前时间年 返回当前时间月 返回该月的总天数 返回这个月一号所对应星期几。
 	 * 
 	 * @return
 	 */

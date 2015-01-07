@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="ims"
+  name="ams-server"
   id="myeclipse.1402643758109"
   context-root="/ims"
   j2ee-spec="1.4"
-  archive="ims.war">
+  archive="ams-server.war">
   <attributes>
     <attribute name="webrootdir" value="WebRoot" />
   </attributes>
